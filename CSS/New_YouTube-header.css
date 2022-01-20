@@ -1,0 +1,103 @@
+/*해더*/
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+#start {
+  display: flex;
+  flex-flow: row nowrap;
+}
+#start > i {
+  text-align: center;
+  cursor: pointer;
+}
+#start > i:hover {
+  color:aqua;
+}
+#middle {
+  display: flex;
+  flex-flow: row nowrap;
+  min-width: 200px;
+  justify-content: center;
+}
+.header-search {
+  width: 550px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+fieldset {
+  width: 95%;
+  border: 1px solid lightslategray;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0;
+  margin-right: 0;
+}
+fieldset:hover {
+  border: 1px solid skyblue;
+}
+fieldset > input {
+  border: none;
+  width: 85%;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+#search-keyboard {
+  width: 35px;
+  height: 25px;
+  display: inline-block;
+  background-image: url(../PIC/네이버\ 스프라이트.png);
+  background-position: -25px -53px;
+  background-repeat: no-repeat;
+  align-self: center;
+}
+#search-keyboard:hover {
+  background-image: url(../PIC/네이버\ 스프라이트.png);
+  background-position: -52px -53px;
+}
+#search-button {
+  width: 45px;
+  height: 35px;
+  background-image: url(../PIC/검색로고-removebg-preview.png);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 4px 6px;
+}
+#search-button > input {
+  width: 40px;
+  height: 30px;
+  display: none;
+}
+.btn-voice-search {
+  width: 50px;
+  padding: 13px;
+  cursor: pointer;
+}
+.btn-voice-search > i:hover {
+  color: skyblue;
+}
+#end {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+#end * {
+  cursor: pointer;
+}
+#end > div {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding: 8px;
+}
+#end i:hover{
+  color: skyblue;
+}
+#end > div > span {
+  text-align: center;
+  background-color: skyblue;
+}

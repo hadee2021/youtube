@@ -1,0 +1,67 @@
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 64px;
+  overflow: auto;
+}
+main > div {
+  min-width: 280px;
+  max-width: 350px;
+  flex: 1;
+  padding: 0 14px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+main > div > span {
+  overflow: hidden;
+}
+.thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+.profile-discribe {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.profile-discribe > div:first-child > img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.flex-tn {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  /*z-index용*/
+  position: relative;
+}
+.title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  cursor: pointer;
+}
+.title-z-index {
+  display: none;
+  border: 1px solid black;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: -40px;
+}
+.title:hover .title-z-index {
+  display: inline-block;
+}
+.name-data {
+  font-size: small;
+  color: lightslategray;
+}
+.name-data > p{
+  margin: 0;
+}

@@ -1,0 +1,38 @@
+html,
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+/*레이아웃*/
+:root{
+  --header-height: 56px;
+}
+header{
+  background-color: rgba(255, 255, 255, 0.7);
+  width: calc(100% - 17px);
+  position: fixed;
+}
+#aside-main-layout{
+  display: flex;
+  height: 100%;
+}
+aside{
+  min-width: 260px;
+  height: calc(100% - var(--header-height));
+  overflow: auto;
+  align-self: flex-end;
+}
+main{
+  flex: auto;
+  
+}
+/*내용*/
+.blind{
+  display: none;
+}
+.make-circle{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
